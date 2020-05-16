@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
+  margin: 0;
   text-align: center;
+  background-color: #323232;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #d5dbdf;
+  margin-bottom: 35px;
 }
 
 .square {
   width: 100px;
   height: 100px;
-  background-color: beige;
-  border: 1px solid gray;
+  background-color: #424242;
+  border: 1px solid #131313;
   display: inline-block;
+  border-radius: 10px;
+}
+
+.square:hover {
+  transition: .5s;
+  background-color: #484848;
+  box-shadow: 2px 2px 5px 2px #262626;
 }
 
 .o {
@@ -20,13 +34,14 @@ h1 {
 
 .o::after {
   position: absolute;
-  content: "\1F6E1";
+  content: "\26AA";
   font-size: 50px;
   line-height: 100px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  color: yellow;
 }
 
 .x {
@@ -35,11 +50,41 @@ h1 {
 
 .x::after {
   position: absolute;
-  content: "\2694";
+  content: "\274C";
   font-size: 50px;
   line-height: 100px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  color: red;
+}
+
+#reset {
+  background: none;
+  border: none;
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 5px 40px;
+  border-radius: 4px;
+  background-color: #374651;
+  font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+  color: white;
+  outline: none;
+
+  margin-top: 80px;
+}
+
+#reset:hover {
+  transition: .2s;
+  background-color: #051826;
+  color: white;
+}
+
+.credits p {
+  color: white;
+}
+
+.credits a {
+  color: white;
 }
