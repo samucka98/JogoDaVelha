@@ -24,13 +24,15 @@ function handleMove(position) {
 
       if (gameOver) {
         setTimeout(() => {
-          alert(`O jogador ${playerTime + 1} venceu!`);
+          alert(`O jogador ${symbols[playerTime]} venceu!`);
         }, 10);
       }
 
       updateStage(squares[position], position);
 
-      playerTime = (playerTime == 0) ? 1 : 0;
+      if (!gameOver) {
+        playerTime = (playerTime == 0) ? 1 : 0;
+      }
     }
   }
 }
