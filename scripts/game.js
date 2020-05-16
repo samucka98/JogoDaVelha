@@ -24,7 +24,7 @@ function handleMove(position) {
 
       if (gameOver) {
         setTimeout(() => {
-          alert(`O jogador ${playerTime} venceu!`);
+          alert(`O jogador ${playerTime + 1} venceu!`);
         }, 10);
       }
 
